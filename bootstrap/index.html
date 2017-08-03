@@ -4,22 +4,48 @@
 	<meta charset="UTF-8">
 	<title>Practice Drill: Bootstrap 3</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
 <div class="container"> <!-- grand container starts -->
 	<header id="head" class="bg-primary"> <!-- header starts -->
-		<h1 class="logo">Practice Drill: Bootstrap 3</h1>
-		<p class="self-promotion">a <a class="label label-success" href="https://github.com/thisismairaj">@thisismairaj</a> production</p>
+		<h1>Practice Drill: Bootstrap 3</h1>
+		<p>a <a class="label label-success" href="https://github.com/thisismairaj">@thisismairaj</a> production</p>
 	</header> <!-- header ends -->
-	<nav class="bg-success"> <!-- nav starts -->
-		<ul class="list-inline">
-			<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">animate.cs</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">AngularJS</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">ReactJS</a></li>
+	<nav class="nav navbar-inverse"> <!-- nav starts -->
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">Bootstrap</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li><a href="http://thisismairaj.github.io/thisismairaj">Home</a></li>
+			<li><a href="../animate-css/index.html">animate.cs</a></li>
+			<li><a href="#">AngularJS</a></li>
+			<li><a href="#">ReactJS</a></li>
 		</ul>
+	</div>
 	</nav> <!-- nav ends -->
+	
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Welcome to the site!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus vero nisi id nulla aliquid tempora, quam ipsam excepturi, facilis obcaecati, sunt inventore numquam praesentium saepe itaque ducimus voluptas dignissimos!</p>
+			<br>
+			<form class="form-inline">
+				<div class="form-group">
+					<label>Name: </label>
+					<input class="form-control" type="name" placeholder="Enter name...">
+				</div>
+				<div class="form-group">
+					<label>Email: </label>
+					<input class="form-control"  type="name" placeholder="Enter email...">
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary" value="Sign Up">
+				</div>
+			</form>
+		</div>
+	</div>
+
 	<div class="content"> <!-- content container starts -->
 	
 	<!-- BASIC TYPOGRAPHY -->
@@ -31,9 +57,8 @@
 
 	<hr>
 
-	<h2>Text-related helper classes</h2>
-
 	<!-- HELPER TEXT CLASSES -->
+	<h2 class="page-header">Text-related helper classes</h2>
 	<p class="text-center">Centered</p>
 	<p class="text-left">Lefted</p>
 	<p class="text-right">Righted</p>
@@ -42,34 +67,35 @@
 
 	<hr>
 
-	<h2>Colorful text</h2>
 	<!-- CONTEXTUAL TEXT -->
-		<p class="text-primary">Some primary text</p>
-		<p class="text-success">Some success text</p>
-		<p class="text-warning">Some warning text</p>
-		<p class="text-info">Some info text</p>
-		<p class="text-danger">Some danger text</p>
-		<p class="text-muted">Some muted text</p>
+	<h2 class="page-header">Colorful text</h2>
+	<p class="text-primary">Some primary text</p>
+	<p class="text-success">Some success text</p>
+	<p class="text-warning">Some warning text</p>
+	<p class="text-info">Some info text</p>
+	<p class="text-danger">Some danger text</p>
+	<p class="text-muted">Some muted text</p>
 
 	<hr>
-	<h2>Backgrounds</h2>
+
 	<!-- CONTEXTUAL BACKGROUNS -->
-		<div class="bg-primary">Primary</div>
-		<div class="bg-success">Success</div>
-		<div class="bg-danger">Danger</div>
-		<div class="bg-warning">Danger</div>
-		<div class="bg-info">Info</div>
+	<h2 class="page-header">Backgrounds</h2>
+	<div class="bg-primary">Primary</div>
+	<div class="bg-success">Success</div>
+	<div class="bg-danger">Danger</div>
+	<div class="bg-warning">Danger</div>
+	<div class="bg-info">Info</div>
 
 	<hr>
 
-	<h2>BUTTONS. BUTTONS. BUTTONS</h2>
 	<!-- CONTEXTUAL BUTTONS -->
-		<button class="btn btn-default">Default</button>
-		<button class="btn btn-primary">Primary</button>
-		<button class="btn btn-success">Success</button>
-		<button class="btn btn-warning">Warning</button>
-		<button class="btn btn-danger">Danger</button>
-		<button class="btn btn-info">Info</button>
+	<h2 class="page-header">BUTTONS. BUTTONS. BUTTONS</h2>
+	<button class="btn btn-default">Default</button>
+	<button class="btn btn-primary">Primary</button>
+	<button class="btn btn-success">Success</button>
+	<button class="btn btn-warning">Warning</button>
+	<button class="btn btn-danger">Danger</button>
+	<button class="btn btn-info">Info</button>
 
 	<hr>
 
@@ -80,8 +106,8 @@
 
 	<hr>
 
-	<h2>Floats</h2>
 	<!-- FLOATS! -->
+	<h2 class="page-header">Floats</h2>
 	<div class="pull-right">
 		<img src="http://via.placeholder.com/200x200" class="img-thumbnail">
 		<p class="helper-block text-center">img thumbnail</p>
@@ -89,13 +115,14 @@
 	<div class="pull-left">
 		<img src="http://via.placeholder.com/200x200" class="img-circle">
 		<p class="helper-block text-center">rounded image</p>
-	</div>;
+	</div>
+	<!-- clearfix hack by bootstrap-->
 	<div class="clearfix"></div>
 
 	<hr>
 
 	<!-- STANDARD FORM -->
-	<h2>Standard form</h2>
+	<h2 class="page-header">Standard form</h2>
 	<div class="container">
 		<form>
 			<div class="form-group">
@@ -131,8 +158,9 @@
 	</div>
 
 	<hr>
-
-	<h2>Inline form</h2>
+	
+	<!-- INLINE FORM -->
+	<h2 class="page-header">Inline form</h2>
 	<div class="container">
 		<form class="form-inline">
 			<div class="form-group">
@@ -151,11 +179,13 @@
 			<div class="form-group">
 				<input type="submit" class="btn btn-primary" value="Submit!">
 			</div>
-		</form>	
+		</form>
 	</div>
+
 	<hr>
-	<h2>Basic Table</h2>
+	
 	<!-- TABLE -->
+	<h2 class="page-header">Basic Table</h2>
 	<div class="container">
 		<table class="table table-bordered table-striped table-condensed">
 			<tr>
@@ -189,20 +219,20 @@
 	<hr>
 
 	<!-- PANELS -->
-	<h2>Panels</h2>
+	<h2 class="page-header">Panels</h2>
 	<div class="panel panel-success">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">Panel title</h3>
-	  </div>
-	  <div class="panel-body">
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum consequuntur blanditiis alias illo a, soluta, minus magni perspiciatis, provident voluptatem velit hic rerum inventore tempore officia unde corporis ut. Officia! ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dolorem eos, esse officiis, explicabo nemo repellendus optio neque magni quo in a modi quasi, nobis. Itaque laboriosam voluptatem sed earum.</p>
-	  </div>
-	  <div class="panel-footer"><h4>THE END... credits roll</h4></div>
+		<div class="panel-heading">
+	    	<h3 class="panel-title">Panel title</h3>
+	  	</div>
+	  	<div class="panel-body">
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum consequuntur blanditiis alias illo a, soluta, minus magni perspiciatis, provident voluptatem velit hic rerum inventore tempore officia unde corporis ut. Officia! ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dolorem eos, esse officiis, explicabo nemo repellendus optio neque magni quo in a modi quasi, nobis. Itaque laboriosam voluptatem sed earum.</p>
+	  	</div>
+	  	<div class="panel-footer"><h4>THE END... credits roll</h4></div>
 	</div>
 	<div class="panel panel-success">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">Panel title</h3>
-	  </div>
+		<div class="panel-heading">
+	  		<h3 class="panel-title">Panel title</h3>
+		</div>
 	    <ul class="list-group">
 	    	<li class="list-group-item">JavaScript</li>
 	    	<li class="list-group-item">CSS</li>
@@ -210,11 +240,13 @@
 	    	<li class="list-group-item">SQL</li>
 	    	<li class="list-group-item">Markdown</li>
 	    </ul>
-	  <div class="panel-footer"><h4>THE END... credits roll</h4></div>
+		<div class="panel-footer"><h4>THE END... credits roll</h4></div>
 	</div>
+	
 	<hr>
+	
 	<!-- ALERTS -->
-	<h2>Alerts</h2>
+	<h2 class="page-header">Alerts</h2>
 	<div class="alert alert-success"><b>Success: </b>The post was published successfully!</div>
 	<div class="alert alert-info"><b>Info: </b>If you can be patient, you can be anything!</div>
 	<div class="alert alert-warning"><b>Warning: </b>Do not delete .git, the consequences are dire!</div>
@@ -227,7 +259,7 @@
 	<hr>
 	
 	<!-- PROGRESS BARS -->
-	<h2>Progress Bars</h2>
+	<h2 class="page-header">Progress Bars</h2>
 	<div class="progress">
 		<div class="progress-bar progress-bar-warning" style="width:38%">
 			Detecting viruses...
@@ -243,9 +275,7 @@
 	<hr>
 
 	<!-- LABELS -->
-	<h2>Labels</h2>
-
-	<h3>Hello <span class="label label-danger">World!</span></h3>
+	<h2 class="page-header">Labels</h2>
 	<span class="label label-default">default</span>
 	<span class="label label-success">Success</span>
 	<span class="label label-info">Info</span>
@@ -253,11 +283,85 @@
 	<span class="label label-primary">Primary</span>
 	<span class="label label-danger">Danger</span>
 
+	<!-- BADGES -->
+	<h2 class="page-header">Badges</h2>
 	<button class="btn btn-warning">Dues<span class="badge badge-danger">18k</span></button>
 	<a href="#">Inbox <span class="badge">89</span></a>
 	<button class="btn btn-default">Messages <span class="badge">28</span></button>
 
-	<div style="height:300px;"></div>
+	<hr>
+
+	<!-- GRID -->
+	<h2 class="page-header">CSS Grid/Layouts</h2>
+	<div class="row">
+		<div class="col-sm-8">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit beatae quis, adipisci inventore architecto natus vitae sit pariatur quidem exercitationem corporis nesciunt? Ex eum impedit dignissimos nesciunt, inventore commodi tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, suscipit dolorum vel, consequatur unde error incidunt necessitatibus, repellendus est in sit. Similique dignissimos corporis aspernatur laudantium, voluptatum mollitia repudiandae.
+		</div>
+		<div class="col-sm-4">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sequi, voluptatibus quia quas quo nihil, id quae. Tempore culpa, quasi ratione nisi, quis labore, ab natus eveniet aut esse sequi.
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="col-md-3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, omnis, quas? Possimus qui, eveniet laboriosam ut, delectus non itaque earum iusto officia quas inventore reprehenderit minus! Provident delectus illum dignissimos.
+		</div>
+		<div class="col-md-3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repellat qui quas, velit numquam est repudiandae sed quia dicta a, quidem debitis, autem nihil, tenetur nostrum dignissimos et. Hic, distinctio.
+		</div>
+		<div class="col-md-3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti, corporis cumque voluptatem temporibus perspiciatis ullam aspernatur dolores et dolor laboriosam obcaecati error quod modi harum voluptas architecto. Ullam, saepe!
+		</div>
+		<div class="col-md-3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, magni iusto, accusamus repellendus labore esse debitis quas soluta dolorem? Laborum, ratione ad debitis est illo minus deserunt, cum sequi doloribus?
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+		<div class="col-md-1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+
+
+	<div style="height:300px;"></div>	
 	</div> <!--content container ends -->
 
 </div> <!-- grand container ends -->
