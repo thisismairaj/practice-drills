@@ -31,6 +31,8 @@
 
 	<hr>
 
+	<h2>Text-related helper classes</h2>
+
 	<!-- HELPER TEXT CLASSES -->
 	<p class="text-center">Centered</p>
 	<p class="text-left">Lefted</p>
@@ -40,6 +42,7 @@
 
 	<hr>
 
+	<h2>Colorful text</h2>
 	<!-- CONTEXTUAL TEXT -->
 		<p class="text-primary">Some primary text</p>
 		<p class="text-success">Some success text</p>
@@ -49,6 +52,7 @@
 		<p class="text-muted">Some muted text</p>
 
 	<hr>
+	<h2>Backgrounds</h2>
 	<!-- CONTEXTUAL BACKGROUNS -->
 		<div class="bg-primary">Primary</div>
 		<div class="bg-success">Success</div>
@@ -57,6 +61,8 @@
 		<div class="bg-info">Info</div>
 
 	<hr>
+
+	<h2>BUTTONS. BUTTONS. BUTTONS</h2>
 	<!-- CONTEXTUAL BUTTONS -->
 		<button class="btn btn-default">Default</button>
 		<button class="btn btn-primary">Primary</button>
@@ -67,24 +73,28 @@
 
 	<hr>
 
-	<button class="btn btn-primary btn-lg">Mera</button>
-
 	<!-- DIFFERENT BUTTON SIZES -->
 	<button class="btn btn-lg btn default">Default Large</button>
 	<button class="btn btn-primary btn-sm">Small</button>
 	<button class="btn btn-warning btn-xs">Small</button>
-	<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times; Close</span></button>
-
 
 	<hr>
+
+	<h2>Floats</h2>
 	<!-- FLOATS! -->
-	<div class="bg-info pull-right"></div>
-	<div class="bg-info pull-left">Left</div>
+	<div class="pull-right">
+		<img src="http://via.placeholder.com/200x200" class="img-thumbnail">
+		<p class="helper-block text-center">img thumbnail</p>
+	</div>
+	<div class="pull-left">
+		<img src="http://via.placeholder.com/200x200" class="img-circle">
+		<p class="helper-block text-center">rounded image</p>
+	</div>;
 	<div class="clearfix"></div>
 
+	<hr>
 
 	<!-- STANDARD FORM -->
-	<hr>
 	<h2>Standard form</h2>
 	<div class="container">
 		<form>
@@ -117,7 +127,7 @@
 			<div class="form-group">
 				<input type="submit" class="btn btn-primary" value="Submit!">
 			</div>
-		</form>	
+		</form>
 	</div>
 
 	<hr>
@@ -143,7 +153,77 @@
 			</div>
 		</form>	
 	</div>
+	<hr>
+	<h2>Basic Table</h2>
+	<!-- TABLE -->
+	<div class="container">
+		<table class="table table-bordered table-striped table-condensed">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Godzilla</td>
+				<td>Dinaosaur</td>
+				<td>18</td>
+			</tr>
+			<tr class="danger">
+				<td>Boss</td>
+				<td>Da</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>23</td>
+			</tr>
+			<tr class="success">
+				<td>Don</td>
+				<td>Corleon</td>
+				<td>20</td>
+			</tr>
+		</table>
+	</div>
 
+	<hr>
+
+	<!-- PANELS -->
+	<h2>Panels</h2>
+	<div class="panel panel-success">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Panel title</h3>
+	  </div>
+	  <div class="panel-body">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum consequuntur blanditiis alias illo a, soluta, minus magni perspiciatis, provident voluptatem velit hic rerum inventore tempore officia unde corporis ut. Officia! ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dolorem eos, esse officiis, explicabo nemo repellendus optio neque magni quo in a modi quasi, nobis. Itaque laboriosam voluptatem sed earum.</p>
+	  </div>
+	  <div class="panel-footer"><h4>THE END... credits roll</h4></div>
+	</div>
+	<div class="panel panel-success">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Panel title</h3>
+	  </div>
+	    <ul class="list-group">
+	    	<li class="list-group-item">JavaScript</li>
+	    	<li class="list-group-item">CSS</li>
+	    	<li class="list-group-item">PHP</li>
+	    	<li class="list-group-item">SQL</li>
+	    	<li class="list-group-item">Markdown</li>
+	    </ul>
+	  <div class="panel-footer"><h4>THE END... credits roll</h4></div>
+	</div>
+	<hr>
+	<!-- ALERTS -->
+	<h2>Alerts</h2>
+	<div class="alert alert-success"><b>Success: </b>The post was published successfully!</div>
+	<div class="alert alert-info"><b>Info: </b>If you can be patient, you can be anything!</div>
+	<div class="alert alert-warning"><b>Warning: </b>Do not delete .git, the consequences are dire!</div>
+	<div class="alert alert-danger"><b>Danger: </b>Tread carefully, there is a deep puddle ahead!</div>
+
+	<div class="alert alert-warning alert-dismissible" role="alert">Some content in this alert box
+		<button type="button" class="close" data-dismiss="alert">Close</button>
+	</div>
+	<div style="height:300px;"></div>
 	</div> <!--content container ends -->
 </div> <!-- grand container ends -->
 </body>
