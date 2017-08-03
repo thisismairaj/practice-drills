@@ -7,24 +7,25 @@
 </head>
 <body>
 <div class="container"> <!-- grand container starts -->
-	<header id="head" class="bg-primary"> <!-- header starts -->
-		<h1>Practice Drill: Bootstrap 3</h1>
-		<p>a <a class="label label-success" href="https://github.com/thisismairaj">@thisismairaj</a> production</p>
-	</header> <!-- header ends -->
-	<nav class="nav navbar-inverse"> <!-- nav starts -->
+	<nav class="nav navbar-default navbar-fixed-top"> <!-- nav starts -->
+	<div class="container">
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand">Bootstrap</a>
+			<a href="#" class="navbar-brand">Practice Drill: Bootstrap 3</a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-			<li><a href="http://thisismairaj.github.io/thisismairaj">Home</a></li>
-			<li><a href="../animate-css/index.html">animate.cs</a></li>
+			<li class="active"><a href="http://thisismairaj.github.io/thisismairaj">Home</a></li>
+			<li><a href="../animate-css/index.html">animate.css</a></li>
 			<li><a href="#">AngularJS</a></li>
 			<li><a href="#">ReactJS</a></li>
 		</ul>
+		<div class="nav navbar-nav navbar-right">
+			<p class="navbar-text">a <a href="#" class="navbar-link"><span class="label label-success">@thisismairaj</span></a> production</p>
+			<li><a href="https://github.com/thisismairaj/practice-drills/tree/master/bootstrap">See on Github!</a></li>
+		</div>
+	</div>
 	</div>
 	</nav> <!-- nav ends -->
-	
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Welcome to the site!</h1>
@@ -45,9 +46,7 @@
 			</form>
 		</div>
 	</div>
-
-	<div class="content"> <!-- content container starts -->
-	
+	<div class="container-fluid bg-success">
 	<!-- BASIC TYPOGRAPHY -->
 	
 	<h2 class="page-header">Bootstrap Basic <small>standard tagline</small></h2>
@@ -123,7 +122,7 @@
 
 	<!-- STANDARD FORM -->
 	<h2 class="page-header">Standard form</h2>
-	<div class="container">
+	<div class="container-fluid">
 		<form>
 			<div class="form-group">
 				<label>Name: </label>
@@ -186,7 +185,7 @@
 	
 	<!-- TABLE -->
 	<h2 class="page-header">Basic Table</h2>
-	<div class="container">
+	<div class="container-fluid">
 		<table class="table table-bordered table-striped table-condensed">
 			<tr>
 				<th>First Name</th>
@@ -293,6 +292,7 @@
 
 	<!-- GRID -->
 	<h2 class="page-header">CSS Grid/Layouts</h2>
+	<h3>Content/Sidebar Columns</h3>
 	<div class="row">
 		<div class="col-sm-8">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit beatae quis, adipisci inventore architecto natus vitae sit pariatur quidem exercitationem corporis nesciunt? Ex eum impedit dignissimos nesciunt, inventore commodi tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, suscipit dolorum vel, consequatur unde error incidunt necessitatibus, repellendus est in sit. Similique dignissimos corporis aspernatur laudantium, voluptatum mollitia repudiandae.
@@ -304,6 +304,7 @@
 
 	<hr>
 
+	<h3>Four Responsive Columns</h3>
 	<div class="row">
 		<div class="col-md-3">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, omnis, quas? Possimus qui, eveniet laboriosam ut, delectus non itaque earum iusto officia quas inventore reprehenderit minus! Provident delectus illum dignissimos.
@@ -321,6 +322,7 @@
 
 	<hr>
 
+	<h3>Twelve Responsive Columns</h3><br>
 	<div class="row">
 		<div class="col-md-1">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -359,10 +361,30 @@
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		</div>
 	</div>
-
-
-	<div style="height:300px;"></div>	
-	</div> <!--content container ends -->
+	</div>
+	<hr>
+	<footer>
+		<div class="row bg-primary">
+			<div class="col-sm-4">
+				<h2>Recent posts</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+			</div>
+			<div class="col-sm-4">
+				<h2>Recent posts</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+			</div>
+			<div class="col-sm-4">
+				<h2>Recent posts</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus aperiam, nihil quo, odit nisi nesciunt, corrupti quibusdam velit modi quod molestiae totam voluptatem tempora expedita excepturi optio, cum fugit.</p>
+			</div>
+		</div>
+	</footer>
 
 </div> <!-- grand container ends -->
 </body>
