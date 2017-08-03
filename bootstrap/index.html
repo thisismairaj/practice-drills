@@ -8,39 +8,143 @@
 </head>
 <body>
 <div class="container"> <!-- grand container starts -->
-	<header id="head" class=""> <!-- header starts -->
-			<h1 class="logo">Practice Drill: Bootstrap 3</h1>
-			<p class="self-promotion">a <span style="background-color:#ccc;border-radius:2px;padding: 0 7px;"><a href="https://github.com/thisismairaj">@thisismairaj</a></span> production</p>
+	<header id="head" class="bg-primary"> <!-- header starts -->
+		<h1 class="logo">Practice Drill: Bootstrap 3</h1>
+		<p class="self-promotion">a <span style="background-color:#ccc;border-radius:2px;padding: 0 7px;"><a href="https://github.com/thisismairaj">@thisismairaj</a></span> production</p>
 	</header> <!-- header ends -->
-	<nav> <!-- nav starts -->
-		<ul class="">
+	<nav class="bg-success"> <!-- nav starts -->
+		<ul class="list-inline">
 			<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">animate.cs</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">AngularJS</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">ReactJS</a></li>
 		</ul>
 	</nav> <!-- nav ends -->
-
-	<div class="content p-5"> <!-- content container starts -->
+	<div class="content"> <!-- content container starts -->
 	
+	<!-- BASIC TYPOGRAPHY -->
+	
+	<h2 class="page-header">Bootstrap Basic <small>standard tagline</small></h2>
+	<p class="lead">Leading text, brief description of content</p>
+	<p>Culpa esse ad esse ullamco duis est <mark>consectetur</mark> dolore aute dolore ad ex et anim sit ullamco quis labore non sint elit cillum. Culpa esse ad esse ullamco duis est <u>consectetur dolore</u> aute dolore ad ex et anim sit ullamco quis labore non sint elit cillum. <del>Culpa</del> esse ad esse ullamco duis est consectetur dolore aute dolore ad ex et anim sit ullamco quis labore non sint elit cillum.	
+	</p>
 
+	<hr>
+
+	<!-- HELPER TEXT CLASSES -->
+	<p class="text-center">Centered</p>
+	<p class="text-left">Lefted</p>
+	<p class="text-right">Righted</p>
+	<p class="text-justify">Justified</p>
+	<p class="text-nowrap">Nowrapped</p>
+
+	<hr>
+
+	<!-- CONTEXTUAL TEXT -->
+		<p class="text-primary">Some primary text</p>
+		<p class="text-success">Some success text</p>
+		<p class="text-warning">Some warning text</p>
+		<p class="text-info">Some info text</p>
+		<p class="text-danger">Some danger text</p>
+		<p class="text-muted">Some muted text</p>
+
+	<hr>
+	<!-- CONTEXTUAL BACKGROUNS -->
+		<div class="bg-primary">Primary</div>
+		<div class="bg-success">Success</div>
+		<div class="bg-danger">Danger</div>
+		<div class="bg-warning">Danger</div>
+		<div class="bg-info">Info</div>
+
+	<hr>
+	<!-- CONTEXTUAL BUTTONS -->
+		<button class="btn btn-default">Default</button>
+		<button class="btn btn-primary">Primary</button>
+		<button class="btn btn-success">Success</button>
+		<button class="btn btn-warning">Warning</button>
+		<button class="btn btn-danger">Danger</button>
+		<button class="btn btn-info">Info</button>
+
+	<hr>
+
+	<button class="btn btn-primary btn-lg">Mera</button>
+
+	<!-- DIFFERENT BUTTON SIZES -->
+	<button class="btn btn-lg btn default">Default Large</button>
+	<button class="btn btn-primary btn-sm">Small</button>
+	<button class="btn btn-warning btn-xs">Small</button>
+	<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times; Close</span></button>
+
+
+	<hr>
+	<!-- FLOATS! -->
+	<div class="bg-info pull-right"></div>
+	<div class="bg-info pull-left">Left</div>
+	<div class="clearfix"></div>
+
+
+	<!-- STANDARD FORM -->
+	<hr>
+	<h2>Standard form</h2>
 	<div class="container">
+		<form>
+			<div class="form-group">
+				<label>Name: </label>
+				<input type="text" class="form-control" placeholder="Add name...">
+			</div>
+			<div class="form-group">
+				<label>Email: </label>
+				<input type="email" class="form-control" placeholder="Add email...">
+			</div>
+			<div class="form-group">
+				<label>Add Message: </label>
+				<textarea class="form-control" placeholder="Add message..."></textarea>
+			</div>
 
-		<h2 class="page-header">Bootstrap Basic <small>standard tagline</small></h2>
-		<p>Culpa esse ad esse ullamco duis est <mark>consectetur</mark> dolore aute dolore ad ex et anim sit ullamco quis labore non sint elit cillum. Culpa esse ad esse ullamco duis est <u>consectetur dolore</u> aute dolore ad ex et anim sit ullamco quis labore non sint elit cillum. Culpa esse ad esse ullamco duis est consectetur dolore aute dolore ad ex et anim sit ullamco quis labore non sint elit cillum.	
-		</p>
-		<hr>
-
+			<div class="form-group">
+				<label>Select Gender: </label>
+				<select class="form-control">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Upload File: </label>
+				<input type="file">
+				<p class="help-block">Only jpg & png allowed</p>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary" value="Submit!">
+			</div>
+		</form>	
 	</div>
-	
-	
-	
 
+	<hr>
+
+	<h2>Inline form</h2>
+	<div class="container">
+		<form class="form-inline">
+			<div class="form-group">
+				<label>Email: </label>
+				<input type="email" class="form-control" placeholder="Add email...">
+			</div>
+			<div class="form-group">
+				<label>Password: </label>
+				<input type="password" class="form-control" placeholder="Add password...">
+			</div>
+			<div class="checkbox">
+			<label>
+				<input type="checkbox" value="remember">Remember me
+			</label>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary" value="Submit!">
+			</div>
+		</form>	
+	</div>
 
 	</div> <!--content container ends -->
 </div> <!-- grand container ends -->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQAt_c0mtpWDATnXqrHrEyWmRLRa0fCX4&callback=initMap">
-    </script>
 </body>
 </html>
