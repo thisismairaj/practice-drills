@@ -6,6 +6,13 @@ My name is Mairaj Pirzada. I have a passion for new web technologies, HTML/CSS l
 
 Every new technology I play with, there will be surely be code, examples and exercises. That code, those files will find their way into Practice Drill. Font Awesome, ReactJS, AngularJS, Vue.js, animate.css, WP Settings API, etc. are a few of the example libraries I am going to learn, play and **push**. Practice Drills will be pushed up to @thisismairaj (my Github). Follow me if you're into new web technologies! :)
 
+### What's Been Practice Drill'ed, So Far?
+
+- [animate.css](https://thisismairaj.github.io/practice-drills/animate-css/)
+- [Bootstrap 3](https://thisismairaj.github.io/practice-drills/bootstrap/)
+- [Materialize CSS](https://thisismairaj.github.io/practice-drills/materialize/)
+- [What The Flexbox](https://thisismairaj.github.io/practice-drills/whattheflexbox)
+
 ## Contributing
 
 First off, you should know that Practice Drills came into existence solely for my own practice. Sorry, but that's frankly the truth. But in coding industry, demonstrations of code pieces can always benefit others using the same technology. That's why I decided to put Practice Drills them up on Github, building my skillset as well as a boastful Github profile (evil smirk). If you found the Practice Drills useful, Star it, or fork it, it's no problem with me. It's all yours! :)
