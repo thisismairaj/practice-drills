@@ -18,3 +18,5 @@ Every new technology I play with, there will be surely be code, examples and exe
 First off, you should know that Practice Drills came into existence solely for my own practice. Sorry, but that's frankly the truth. But in coding industry, demonstrations of code pieces can always benefit others using the same technology. That's why I decided to put Practice Drills them up on Github, building my skillset as well as a boastful Github profile (evil smirk). If you found the Practice Drills useful, Star it, or fork it, it's no problem with me. It's all yours! :)
 
 > Just ship it, fuck perfectionism.
+
+For More: [DekhoGeeko.com](https://dekhogeeko.com)
